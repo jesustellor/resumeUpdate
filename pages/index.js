@@ -80,7 +80,7 @@ export default function Home() {
                 Skills
               </b>
             </p>
-            <p>Adobe Photoshop</p>
+            <p>JavaScript</p>
             <div className="w3-light-grey w3-round-xlarge w3-small">
               <div
                 className="w3-container w3-center w3-round-xlarge w3-teal"
@@ -89,7 +89,7 @@ export default function Home() {
                 90%
               </div>
             </div>
-            <p>Photography</p>
+            <p>HTML</p>
             <div className="w3-light-grey w3-round-xlarge w3-small">
               <div
                 className="w3-container w3-center w3-round-xlarge w3-teal"
@@ -98,22 +98,13 @@ export default function Home() {
                 <div className="w3-center w3-text-white">80%</div>
               </div>
             </div>
-            <p>Illustrator</p>
+            <p>CSS</p>
             <div className="w3-light-grey w3-round-xlarge w3-small">
               <div
                 className="w3-container w3-center w3-round-xlarge w3-teal"
                 style={{ width: "75%" }}
               >
                 75%
-              </div>
-            </div>
-            <p>Media</p>
-            <div className="w3-light-grey w3-round-xlarge w3-small">
-              <div
-                className="w3-container w3-center w3-round-xlarge w3-teal"
-                style={{ width: "50%" }}
-              >
-                50%
               </div>
             </div>
             <br />
@@ -134,14 +125,7 @@ export default function Home() {
             <div className="w3-light-grey w3-round-xlarge">
               <div
                 className="w3-round-xlarge w3-teal"
-                style={{ height: 24, width: "55%" }}
-              />
-            </div>
-            <p>German</p>
-            <div className="w3-light-grey w3-round-xlarge">
-              <div
-                className="w3-round-xlarge w3-teal"
-                style={{ height: 24, width: "25%" }}
+                style={{ height: 24, width: "100%" }}
               />
             </div>
             <br />
