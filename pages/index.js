@@ -13,7 +13,7 @@ export default function Home() {
 
 
   useEffect(() => {
-    fetch('https://pixabay.com/api/?key=3180163-50123b99e06cda0e64fc27394&q=computer&image_type=all')
+    fetch('https://pixabay.com/api/?key=3180163-50123b99e06cda0e64fc27394&q=nature&image_type=all')
       .then(res => res.json())
       .then(data => {
         var hits = data.hits;
