@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <section>
     <Head>
-    <title>W3.CSS Template</title>
+    <title>Jesus Tello Developer</title>
 <meta charSet="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
