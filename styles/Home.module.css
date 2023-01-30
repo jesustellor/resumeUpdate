@@ -24,11 +24,12 @@
   white-space: nowrap;
   animation: typing 4s steps(40, end);
   animation-fill-mode: forwards;
+  width: fit-content;
 }
 
 @keyframes typing {
   from { width: 0px; }
-  to { width: fit-content; }
+  to { width: 100% }
 }
 
 .text {
