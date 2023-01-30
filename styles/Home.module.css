@@ -5,7 +5,6 @@
 }
 
 #imageBy {
-  text-decoration: none;
   width: fit-content;
   padding: 0 20px;
   cursor: pointer;
@@ -17,6 +16,8 @@
 
 #smilesJpg {
   display: flex;
+  margin: auto;
+  width: fit-content;
 }
 
 .imageSmile {
