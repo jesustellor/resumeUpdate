@@ -43,6 +43,7 @@ export default function Home() {
         <div className="w3-white w3-text-grey w3-card-4">
           <div className="w3-display-container">
             <Image
+              id={styles.smilesJpg}
               className={styles.imageSmile}
               src="/smile.jpg"
               width={300}
