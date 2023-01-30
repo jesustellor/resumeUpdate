@@ -13,6 +13,9 @@
   border: none;
   padding: auto;
 }
+.imageSmile {
+  width: fit-content;
+}
 
 .typingEffect {
   display: flex;
@@ -25,7 +28,7 @@
 
 @keyframes typing {
   from { width: 0px; }
-  to { width: 60%; }
+  to { width: fit-content; }
 }
 
 .text {
