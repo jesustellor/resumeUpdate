@@ -4,14 +4,24 @@
   background-position: center;
 }
 
-#imageBy {
+.backgroundThanks {
   width: fit-content;
-  padding: 0 20px;
+  height: 50px;
+  /* border: 2px solid red; */
   cursor: pointer;
-  border-radius: 45%;
-  background-color: rgba(177, 177, 231, 0.5);
-  border: none;
-  padding: auto;
+}
+
+
+#imageAndInfo {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#workExperience {
+  background-color: rgba(255,255,255, 0.8);
+}
+
+#educationInfo {
+  background-color: rgba(255,255,255, 0.8);
 }
 
 #smilesJpg {
@@ -34,6 +44,11 @@
   width: fit-content;
 }
 
+.socialIcons > i {
+  padding: 15px;
+  font-size: xx-large;
+}
+
 @keyframes typing {
   from { width: 0px; }
   to { width: 100% }
@@ -43,4 +58,14 @@
   display: inline-block;
   overflow: hidden;
   white-space: pre-wrap;
+}
+
+#footerId {
+  display: flex;
+}
+
+#findmeAt {
+  margin: auto;
+  width: fit-content;
+  /* border: 2px solid red; */
 }
