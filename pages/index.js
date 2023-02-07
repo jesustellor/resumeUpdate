@@ -10,6 +10,8 @@ export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState("");
   const [user, setUser] = useState("");
   const [url, setUrl] = useState("");
+  const [resume, setResume] = useState(false);
+
 
   useEffect(() => {
     fetch(
@@ -24,7 +26,21 @@ export default function Home() {
         setUser(randomHit.user);
         setUrl(randomHit.pageURL);
       });
-  }, []);
+      if (resume) {
+        const resumeElement = document.querySelector(`.${styles.resume}`);
+        resumeElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+  }, [resume]);
+
+  let letOpen = (event) => {
+    if(event.target.innerText === 'Resume'){
+      setResume(!resume)
+    }
+  }
+
+  let closeWindow = () => {
+    setResume(false);
+  };
 
   return (
     <section>
@@ -170,10 +186,36 @@ export default function Home() {
                     <b>View Resume</b>
                   </h5>
                   <h6 className="w3-text-teal">
-                    <button className="w3-button w3-teal w3-round w3-opacity w3-hover-opacity-off" id={styles.resumeButton}>Resume</button>
-                    <button className="w3-button w3-teal w3-round w3-opacity w3-hover-opacity-off">Projects</button>
+                    <button
+                      onClick={letOpen}
+                      className="w3-button w3-teal w3-round w3-opacity w3-hover-opacity-off"
+                      id={styles.resumeButton}
+                    >
+                      Resume
+                    </button>
+                    <button className="w3-button w3-teal w3-round w3-opacity w3-hover-opacity-off">
+                      Projects
+                    </button>
                   </h6>
                   <br />
+                  {/*resume added here */}
+                  {resume && (
+                    <section className={styles.resume}>
+                      <button
+                        className={styles.closeButtonResume}
+                        onClick={closeWindow}
+                      >
+                        X
+                      </button>
+                      <Image
+                        className={styles.resumeImage}
+                        src="/resume.jpg"
+                        alt="A picture of my resume showing my skills education and Work Experience."
+                        width={375}
+                        height={110}
+                      />
+                    </section>
+                  )}
                 </div>
               </div>
               <div className="w3-container w3-card" id={styles.educationInfo}>
