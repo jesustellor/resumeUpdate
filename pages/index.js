@@ -193,9 +193,9 @@ export default function Home() {
                     >
                       Resume
                     </button>
-                    <button className="w3-button w3-teal w3-round w3-opacity w3-hover-opacity-off">
+                    {/* <button className="w3-button w3-teal w3-round w3-opacity w3-hover-opacity-off">
                       Projects
-                    </button>
+                    </button> */}
                   </h6>
                   <br />
                   {/*resume added here */}
