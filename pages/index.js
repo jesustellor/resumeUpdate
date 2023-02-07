@@ -54,7 +54,7 @@ export default function Home() {
                     height={300}
                     alt="Avatar"
                   />
-                  <div className="w3-display-bottomleft w3-container w3-text-black">
+                  <div className="w3-display-bottomleft w3-text-black">
                     <h2 id={styles.myName}>Jesus Tello</h2>
                   </div>
                 </div>
@@ -167,32 +167,12 @@ export default function Home() {
                 </div>
                 <div className="w3-container">
                   <h5 className="w3-opacity">
-                    <b>View Resume / </b>
+                    <b>View Resume</b>
                   </h5>
                   <h6 className="w3-text-teal">
-                    <i className="fa fa-calendar fa-fw w3-margin-right" />
-                    Mar 2012 - {" "}
-                    <button className="w3-button w3-teal w3-round w3-opacity w3-hover-opacity-off">Resume</button>
+                    <button className="w3-button w3-teal w3-round w3-opacity w3-hover-opacity-off" id={styles.resumeButton}>Resume</button>
+                    <button className="w3-button w3-teal w3-round w3-opacity w3-hover-opacity-off">Projects</button>
                   </h6>
-                  <p>
-                    Consectetur adipisicing elit. Praesentium magnam consectetur
-                    vel in deserunt aspernatur est reprehenderit sunt hic. Nulla
-                    tempora soluta ea et odio, unde doloremque repellendus iure,
-                    iste.
-                  </p>
-                  <hr />
-                </div>
-                <div className="w3-container">
-                  <h5 className="w3-opacity">
-                    <b>Graphic</b>
-                  </h5>
-                  <h6 className="w3-text-teal">
-                    <i className="fa fa-calendar fa-fw w3-margin-right" />
-                    Jun 2010 - Mar 2012
-                  </h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.{" "}
-                  </p>
                   <br />
                 </div>
               </div>
@@ -220,7 +200,7 @@ export default function Home() {
                     <i className="fa fa-calendar fa-fw w3-margin-right" />
                     2005 - 2006
                   </h6>
-                  <p>High School Diploma</p>
+                  <p>High School Diploma /w College credits</p>
                   <br />
                 </div>
               </div>
