@@ -4,13 +4,11 @@
   background-position: center;
 }
 
-.backgroundThanks {
+#myName {
+  border: 2px solid red;
+  margin: 1%;
   width: fit-content;
-  height: 50px;
-  /* border: 2px solid red; */
-  cursor: pointer;
 }
-
 
 #imageAndInfo {
   background-color: rgba(255, 255, 255, 0.8);
@@ -44,9 +42,10 @@
   width: fit-content;
 }
 
-.socialIcons > i {
+.socialIcons > a > i {
   padding: 15px;
   font-size: xx-large;
+  cursor: pointer;
 }
 
 @keyframes typing {
@@ -62,10 +61,22 @@
 
 #footerId {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #findmeAt {
   margin: auto;
   width: fit-content;
   /* border: 2px solid red; */
+}
+
+.backgroundThanks {
+  width: fit-content;
+  /* border: 2px solid red; */
+  cursor: pointer;
+}
+
+.socialIcons {
 }

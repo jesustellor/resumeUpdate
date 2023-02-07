@@ -55,7 +55,7 @@ export default function Home() {
                     alt="Avatar"
                   />
                   <div className="w3-display-bottomleft w3-container w3-text-black">
-                    <h2>Jesus Tello</h2>
+                    <h2 id={styles.myName}>Jesus Tello</h2>
                   </div>
                 </div>
                 <div className="w3-container">
@@ -88,27 +88,27 @@ export default function Home() {
                   <div className="w3-light-grey w3-round-xlarge w3-small">
                     <div
                       className="w3-container w3-center w3-round-xlarge w3-teal"
-                      style={{ width: "90%" }}
+                      style={{ width: "95%" }}
                     >
-                      90%
+                      95%
                     </div>
                   </div>
                   <p>HTML</p>
                   <div className="w3-light-grey w3-round-xlarge w3-small">
                     <div
                       className="w3-container w3-center w3-round-xlarge w3-teal"
-                      style={{ width: "80%" }}
+                      style={{ width: "90%" }}
                     >
-                      <div className="w3-center w3-text-white">80%</div>
+                      <div className="w3-center w3-text-white">90%</div>
                     </div>
                   </div>
                   <p>CSS</p>
                   <div className="w3-light-grey w3-round-xlarge w3-small">
                     <div
                       className="w3-container w3-center w3-round-xlarge w3-teal"
-                      style={{ width: "75%" }}
+                      style={{ width: "85%" }}
                     >
-                      75%
+                      85%
                     </div>
                   </div>
                   <br />
@@ -160,21 +160,19 @@ export default function Home() {
                   <p>
                     I am a Full Stack MERN Developer with a passion for staying
                     current with emerging technologies. My expertise lies in
-                    JavaScript, and I have a strong focus on utilizing Docker
-                    containers to aid in my learning and development process. I
-                    am available for hire to assist with any and all of your
-                    online development needs. Please take a moment to review my
-                    portfolio, projects and resume.
+                    JavaScript. I am available for hire to assist with any and
+                    all of your online development needs.
                   </p>
                   <hr />
                 </div>
                 <div className="w3-container">
                   <h5 className="w3-opacity">
-                    <b>Web Developer / something.com</b>
+                    <b>View Resume / </b>
                   </h5>
                   <h6 className="w3-text-teal">
                     <i className="fa fa-calendar fa-fw w3-margin-right" />
-                    Mar 2012 - Dec 2014
+                    Mar 2012 - {" "}
+                    <button className="w3-button w3-teal w3-round w3-opacity w3-hover-opacity-off">Resume</button>
                   </h6>
                   <p>
                     Consectetur adipisicing elit. Praesentium magnam consectetur
@@ -186,7 +184,7 @@ export default function Home() {
                 </div>
                 <div className="w3-container">
                   <h5 className="w3-opacity">
-                    <b>Graphic Designer / designsomething.com</b>
+                    <b>Graphic</b>
                   </h5>
                   <h6 className="w3-text-teal">
                     <i className="fa fa-calendar fa-fw w3-margin-right" />
@@ -205,7 +203,7 @@ export default function Home() {
                 </h2>
                 <div className="w3-container">
                   <h5 className="w3-opacity">
-                    <b>W3Schools.com</b>
+                    <b>W3Schools.com / Freecodecamp / ProgrammingHub</b>
                   </h5>
                   <h6 className="w3-text-teal">
                     <i className="fa fa-calendar fa-fw w3-margin-right" />
@@ -216,24 +214,13 @@ export default function Home() {
                 </div>
                 <div className="w3-container">
                   <h5 className="w3-opacity">
-                    <b>London Business School</b>
+                    <b>Mark Morse Twain</b>
                   </h5>
                   <h6 className="w3-text-teal">
                     <i className="fa fa-calendar fa-fw w3-margin-right" />
-                    2013 - 2015
+                    2005 - 2006
                   </h6>
-                  <p>Master Degree</p>
-                  <hr />
-                </div>
-                <div className="w3-container">
-                  <h5 className="w3-opacity">
-                    <b>School of Coding</b>
-                  </h5>
-                  <h6 className="w3-text-teal">
-                    <i className="fa fa-calendar fa-fw w3-margin-right" />
-                    2010 - 2013
-                  </h6>
-                  <p>Bachelor Degree</p>
+                  <p>High School Diploma</p>
                   <br />
                 </div>
               </div>
@@ -243,7 +230,10 @@ export default function Home() {
           </div>
           {/* End Page Container */}
         </div>
-        <footer className="w3-container w3-teal w3-center w3-margin-top" id={styles.footerId}>
+        <footer
+          className="w3-container w3-teal w3-center w3-margin-top"
+          id={styles.footerId}
+        >
           <a href={url} className={styles.backgroundThanks}>
             <p>
               <Image
@@ -256,22 +246,33 @@ export default function Home() {
             </p>
           </a>
           <div id={styles.findmeAt}>
-          <p>Find me on social media.</p>
-          <section className={styles.socialIcons}>
-          <i className="fa fa-instagram w3-hover-opacity" />
-          <i className="fa fa-github w3-hover-opacity" />
-          <i className="fa fa-linkedin w3-hover-opacity" />
-          </section>
-          <p>
-            Powered by{" "}
-            <a
-              rel="noreferrer"
-              href="https://www.w3schools.com/w3css/default.asp"
-              target="_blank"
-            >
-              w3.css
-            </a>
-          </p>
+            <p>Find me on social media.</p>
+            <section className={styles.socialIcons}>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/jesustellor"
+              >
+                <i className="fa fa-github w3-hover-opacity" />
+              </a>
+              <a
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/jesus-tello/"
+                target="_blank"
+              >
+                <i className="fa fa-linkedin w3-hover-opacity" />
+              </a>
+            </section>
+            <p>
+              Powered by{" "}
+              <a
+                rel="noreferrer"
+                href="https://www.w3schools.com/w3css/default.asp"
+                target="_blank"
+              >
+                w3.css
+              </a>
+            </p>
           </div>
         </footer>
       </section>
